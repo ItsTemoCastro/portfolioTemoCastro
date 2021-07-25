@@ -166,7 +166,7 @@ body{
 .about-container-all{
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgb(145, 138, 138);
     position: relative;
     overflow: hidden;
     
@@ -201,42 +201,78 @@ body{
     width: 90%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     position: relative;
     color:#f0f8ff;
     margin-top: 20px;
 }
 .about-container-all .about-content .about-info-content .about-me{
-    width: 600px;
+    width: 1000px;
     height:auto;
 
 }
-.about-container-all .about-content .about-info-content .about-me > h2{
-    font-size: 45px;
-    width: 100%;
-}
 .about-container-all .about-content .about-info-content .about-me > p{
-    width: 400px;
+    width: 95%;
+    text-align: center;
     font-size: 25px;
     line-height: 40px;
     margin-top: 10px;
 }
-.about-container-all .about-content .about-info-content .about-skills{
-    width:600px;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.about-container-all .about-content .about-info-content .about-skills .about-technologies, .about-competences{
+.about-container-all .about-content .about-info-content .about-competences{
     width: 100%;
     height:300px;
-
+    margin-top: 20px;
 }
-.about-container-all .about-content .about-info-content .about-skills .about-technologies .technologies-title, .about-competences .competences-title{
+.about-container-all .about-content .about-info-content .about-competences .competences-title{
     width: 100%;
     height: 60px;
     display: flex;
     justify-content:center;
     align-items: center;
+}
+.about-container-all .about-content .about-info-content .about-competences .competences-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+.about-container-all .about-content .about-info-content .about-competences .competences-content
+.competences-item{
+    width:300px;
+    height: 170px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+.about-container-all .about-content .about-info-content .about-competences .competences-content
+.competences-item .item-image{
+    height:100px;
+    width: 100px;
+    border-radius: 50%;
+    position:absolute;
+    background: rgb(145, 138, 138);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-container-all .about-content .about-info-content .about-competences .competences-content
+.competences-item .item-image >img{
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+}
+.about-container-all .about-content .about-info-content .about-competences .competences-content
+.competences-item .item-content{
+    width: 100%;
+    height:120px;
+    background: #f0f8ff;
+    border-radius: 10px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#b8860b;
 }
